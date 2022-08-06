@@ -25,7 +25,7 @@ function sendemail_verify($fname,$lname,$email,$verify_token)
   $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   //xjssirazbecywkjg
   //Recipients
-  $user_mail=$_POST['email'];
+  
   $mail->setFrom( "leavemanagement254@gmail.com",$fname.''.$lname);
   $mail->addAddress($email);     //Add a recipient
   
@@ -37,9 +37,10 @@ function sendemail_verify($fname,$lname,$email,$verify_token)
   <h2> You have registered with Leave_management System</h2>
   <h5> Verify your email address to Login with the below given link</h5>
   <br/><br/>
-  <a href= 'http://localhost/leave_blog/verify_email.php?token=$verify_token'> Click me</a>
+ 
+  <a href= 'http://leave-manage-system.herokuapp.com/verify_email.php?token=$verify_token'> Click me</a>
   ";
-
+ // <a href= 'http://localhost/leave_blog/verify_email.php?token=$verify_token'> Click me</a>
   $mail->Body    = $mail_template;
   $mail->send();
   // echo 'Message has been sent';
