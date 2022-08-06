@@ -15,7 +15,7 @@ include('includes/navbar.php');
 ?>
 
 <?php include('message.php'); ?>
-<section class="wrapper">
+<section class="wrapper" id="wrapper">
     <div class=" py-5">
         <div class="container ">
             <div class="row justify-content-center">
