@@ -35,12 +35,12 @@ function sendemail_verify($fname,$lname,$email,$verify_token)
 
   $mail_template  = "
   <h2> You have registered with Leave_management System</h2>
-  <h5> Verify your email address to Login with the below given link</h5>
+  <h5> Verify your email address to Login with the given link below</h5>
   <br/><br/>
  
   <a href= 'http://leave-manage-system.herokuapp.com/verify_email.php?token=$verify_token'> Click me</a>
   ";
- // <a href= 'http://localhost/leave_blog/verify_email.php?token=$verify_token'> Click me</a>
+ //Local <a href= 'http://localhost/leave_blog/verify_email.php?token=$verify_token'> Click me</a>
   $mail->Body    = $mail_template;
   $mail->send();
   // echo 'Message has been sent';

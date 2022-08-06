@@ -271,3 +271,10 @@ hr
     padding-bottom: 20px;
     text-align: center;
 }
+.wrapper{
+    background-image: url(../images/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
