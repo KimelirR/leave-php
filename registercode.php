@@ -19,13 +19,14 @@ function sendemail_verify($fname,$lname,$email,$verify_token)
 
   $mail->Host       = "smtp.gmail.com";                                             
   $mail->Username   = "leavemanagement254@gmail.com";                     //SMTP username
-  $mail->Password   = "Alloweduser254";  
+  $mail->Password   = "xjssirazbecywkjg ";// Alloweduser254
                               
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
   $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
+  //xjssirazbecywkjg
   //Recipients
-  $mail->setFrom("leavemanagement254@gmail.com",$fname.''.$lname);
+  $user_mail=$_POST['email'];
+  $mail->setFrom( "leavemanagement254@gmail.com",$fname.''.$lname);
   $mail->addAddress($email);     //Add a recipient
   
    //Content

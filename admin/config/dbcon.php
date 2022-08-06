@@ -5,6 +5,7 @@ $hostname = "remotemysql.com";
 $username = "iFzsNLpxHA";
 $password = "IEBRA2zmnU";
 $database = "iFzsNLpxHA";
+
 //This is local database down here
 // $hostname = "localhost";
 // $username = "root";
